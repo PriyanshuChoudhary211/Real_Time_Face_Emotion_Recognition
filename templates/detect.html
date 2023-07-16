@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #333f4a;
+        }
+        img{
+            display: block;
+            margin-left: 8%;
+            margin-top: 9%;
+            position: fixed;
+            margin-bottom: auto;
+            height: 60%;
+            width: 33%;  
+            border: 2px solid #091b26;   
+              
+        }
+        .text{
+
+        }
+
+    </style>
+</head>
+<html>
+
+
+  <body>
+    <div>
+        <img src="{{ url_for('video') }}"/>
+        <!-- <img src="../p1.jpg"/> -->
+        <div class="text">
+            <p>This project has an accuracy of around 76%. This low accuracy is because of the uneven dataset.</h3>
+        </div>
+
+        <div class="btn">
+            <button><a href="/"> Home </a></button>
+        </div>
+    </div>   
+
+  </body>
+
+
+</html>
