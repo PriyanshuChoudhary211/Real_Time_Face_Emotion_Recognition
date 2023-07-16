@@ -10,7 +10,7 @@ eye_detect = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 my_model = tf.keras.models.load_model('model.h5')
 class_labels = ['angry','happy','neutral','sad','surprise']
-camera=cv2.VideoCapture(0)
+
 def draw_border(img, pt1, pt2, color, thickness, r, d):
     x1,y1 = pt1
     x2,y2 = pt2
@@ -66,6 +66,7 @@ def face_detection(img,size=0.5):
     return img
 
 def generate_frames():
+    camera=cv2.VideoCapture(0)
     while True:
             
         ## read the camera frame
