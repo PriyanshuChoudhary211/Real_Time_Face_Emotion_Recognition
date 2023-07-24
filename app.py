@@ -66,7 +66,7 @@ def face_detection(img,size=0.5):
     return img
 
 def generate_frames():
-    camera=cv2.VideoCapture(0)
+    camera=cv2.VideoCapture(1)
     while True:
             
         ## read the camera frame
